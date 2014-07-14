@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+    
+
+
+    <EditText
+        android:id="@+id/AnswerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="28dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/AnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerButton"
+        android:layout_below="@+id/AnswerText"
+        android:layout_marginTop="5dp"
+        android:text="Check Answer" 
+        />
+
+    <TextView
+        android:id="@+id/QuestionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/QuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Show Next Question" />
+
+    <TextView
+        android:id="@+id/AnswerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/QuestionButton"
+        android:layout_below="@+id/QuestionButton"
+        android:layout_marginTop="1dp"
+        android:text="TextView" />
+
+
+    
+    
+</LinearLayout>
+
